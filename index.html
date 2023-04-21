@@ -18,6 +18,13 @@
     />
     <!--Css personalizado-->
     <link rel="stylesheet" href="./assets/styles/main.css" />
+    <script>
+      console.log("Holi crayoli");
+      let d = new Date();
+      console.log('Hoy se inicio el ${d.getHours()} h.');
+
+      
+    </script>
   </head>
   <body>
     <!--Navbar-->
@@ -187,6 +194,29 @@
         </div>
       </div>
     </div>
+    <!-- Acceso a DOM -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-5 text-center">
+          <p id="name"> Fatima Moreno</p>
+          <!--<p onclick="changeColorToRed()">Cambia el color a rojo</p>-->
+        </div>
+      </div>
+      <!--Botones cambia el color-->
+      <div class="row">
+        <div class="col">
+          <button onclick="changeColorToRed()" type="button" class="btn btn-danger">Rojo</button>
+
+        </div>
+        <div class="col">
+
+        </div>
+        <div class="col">
+
+        </div>
+      </div>
+    </div>
+    
     <!--Cards-->
     <!--Card 1-->
     <div class="container mt-4 d-flex justify-content-center">
@@ -218,10 +248,23 @@
         </div>
       </div>
 </div>
+<!--Script bootstrap-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+
+      <!--Script cambia el nombre-->
+    <script>
+      //document.getElementById("name").innerHTML = "Fatima <strong> Moreno</strong>"
+      const refName = document.getElementById("name");
+      console.log(refName);
+      refName.innerHTML = "Fatima <strong>Moreno</strong>";
+    </script>
+    <!--Script externo-->
+    <script src="./js/main.js"></script>
+
+    
   </body>
 </html>
