@@ -198,24 +198,40 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-5 text-center">
-          <p id="name"> Fatima Moreno</p>
+          <p id="name" class="text-color"> Fatima Moreno</p>
           <!--<p onclick="changeColorToRed()">Cambia el color a rojo</p>-->
         </div>
       </div>
       <!--Botones cambia el color-->
-      <div class="row">
+      <div class="row text-center">
         <div class="col">
           <button onclick="changeColorToRed()" type="button" class="btn btn-danger">Rojo</button>
 
         </div>
         <div class="col">
+          <button onclick="changeColorToBlue()" type="button" class="btn btn-primary">Azul</button>
 
         </div>
         <div class="col">
+          <button onclick="changeColorToGreen()" type="button" class="btn btn-success">Verde</button>
 
         </div>
       </div>
     </div>
+    <br>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col"><p class="text-color" onclick="changeColorParagraph(`green`, this)">Me cambiare a Verde</p></div>
+        <div class="col"><p class="text-color" onclick="changeColorParagraph(`blue`, this)">Me cambiare a Azul</p></div>
+        <div class="col"><p class="text-color" onclick="changeColorParagraph(`yellow`, this)">Me cambiare a Amarillo</p></div>
+      </div>
+    </div>
+    <div class="row text text-center">
+      <div class="col">
+      <button type="button" class="btn btn-lg btn-primary" onclick="resetColor()">Reset</button>
+      </div>
+  </div>
+
     
     <!--Cards-->
     <!--Card 1-->
