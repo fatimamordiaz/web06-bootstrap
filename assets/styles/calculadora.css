@@ -1,3 +1,17 @@
 .logo-shuriken{
     max-height: 40px;
 }
+body{
+    width: 100%;
+    height: 100vh;
+    background: #2980B9; 
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
+}
+.f{
+    width: 100%;
+    max-width: 355px;
+}
+*{
+    overflow: hidden;
+}
